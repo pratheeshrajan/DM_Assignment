@@ -4,7 +4,7 @@ import pandas as pd
 from collections import Counter
 from sklearn.cluster import DBSCAN 
 
-galaxyInfo = pd.read_excel("C:/Users/u27244/Downloads/Assignment_BengaluruBatch/galaxy.xlsx")
+galaxyInfo = pd.read_excel("galaxy.xlsx")
 
 dbScan = DBSCAN(eps = 0.2, min_samples = 10, metric = 'euclidean').fit(galaxyInfo)
 labels = dbScan.labels_
